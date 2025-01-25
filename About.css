@@ -165,9 +165,9 @@ header {
 }
 
 .fas-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
   gap: 2rem;
   margin-top: 5rem;
 }
@@ -207,10 +207,14 @@ header {
   height: 50vh;
   background: url(images/lawata.jpeg) center center / cover no-repeat;
 }
-
+.maps h1{
+  color: var(--text-color);
+  text-align: center;
+  padding: 0px 0px 10px;
+}
 .maps iframe {
   width: 100%;
-  max-width: 600px;
+  width: 500px;
   height: 300px;
   border: none;
   border-radius: 10px;
