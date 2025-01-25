@@ -7,20 +7,18 @@
 }
 
 :root {
-  --text-color: #fff;
+  --text-color: #ffff;
   --bg-color: #F8FAE5;
   --second-bg-color: #43766C;
   --main-color: #76453B;
   --other-color: #B19470;
-  --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 body {
-  background: var(--bg-color);
+  background: url('images/lawata.jpeg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  line-height: 1.6;
 }
 
 /* Header */
@@ -34,7 +32,6 @@ header {
   justify-content: space-between;
   background-color: var(--main-color);
   padding: 15px 10%;
-  box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .logo {
@@ -54,7 +51,6 @@ header {
   color: var(--other-color);
   margin-left: 20px;
   padding: 10px 15px;
-  transition: color 0.3s ease;
 }
 
 .navlist a:hover {
@@ -168,7 +164,7 @@ header {
   margin: 10px;
   width: 300px;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--text-color);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -219,7 +215,7 @@ header {
 /* Footer */
 .footer {
   background: var(--main-color);
-  color: white;
+  color: var(--text-color);
   text-align: center;
   padding: 10px 0;
   font-size: 14px;
