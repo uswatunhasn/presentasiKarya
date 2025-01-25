@@ -152,51 +152,47 @@ header {
 
 /* Facilities Section */
 .fasilitas {
-  padding: 100px;
-}
-
-.center-text {
+  padding: 50px 20px;
+  background-color: var(--bg-color);
   text-align: center;
 }
 
-.center-text h2 {
-  font-size: 24px;
-  font-weight: 800;
+.fasilitas .center-text h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
 }
 
 .fas-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  align-items: center;
-  gap: 2rem;
-  margin-top: 5rem;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.box {
-  flex: 1 1 calc(25% - 2rem);
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.fas-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-.containner{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.box img {
-  justify-content: center;
+
+.fas-content img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  border-radius: 10px;
+  display: block;
   filter: brightness(70%);
-  transition: all 0.3s ease;
 }
-
-.box img:hover {
+.fas-content img:hover{
   filter: brightness(100%);
+}
+.fas-content h4 {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 15px 0;
 }
 
 /* Maps Section */
@@ -252,9 +248,10 @@ header {
 }
 
 /* Responsive Design */
+/* Tablet */
 @media (max-width: 1024px) {
   .about {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Satu kolom untuk tampilan tablet */
     text-align: center;
   }
 
@@ -267,15 +264,31 @@ header {
     padding: 20px;
     max-width: 100%;
   }
+
+  .fas-content {
+    display: flex; /* Menggunakan flexbox untuk fasilitas */
+    flex-wrap: wrap; /* Membungkus item ke baris berikutnya */
+    justify-content: center; /* Menyelaraskan item di tengah */
+  }
+
+  .fas-content {
+    width: 100%; /* Memastikan konten fasilitas mengisi lebar penuh */
+  }
+
+  .fas-content .box {
+    width: 45%; /* Lebar box untuk tablet */
+    margin: 10px; /* Jarak antar box */
+  }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
   header {
     padding: 15px 5%;
   }
 
   #menu-icon {
-    display: block;
+    display: block; /* Menampilkan menu icon pada mobile */
   }
 
   .navlist {
@@ -297,48 +310,50 @@ header {
   }
 
   .navlist.active {
-    right: 0;
+    right: 0; /* Menampilkan menu saat aktif */
   }
 
   .hero {
-    height: 50vh;
+    height: 50vh; /* Mengurangi tinggi hero section pada mobile */
   }
 
-  .box {
-    flex: 1 1 calc(50% - 2rem);
+  .fas-content {
+    flex-direction: column; /* Mengatur fasilitas menjadi kolom */
+    align-items: center; /* Menyelaraskan item di tengah */
   }
 
-  .box img {
-    max-width: 250px;
+  .fas-content .box {
+    width: 90%; /* Lebar box untuk mobile */
+    margin: 10px 0; /* Jarak antar box */
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 28px;
+    font-size: 28px; /* Ukuran logo lebih kecil */
   }
 
   .main-content h1 {
-    font-size: 32px;
+    font-size: 28px; /* Ukuran font judul lebih kecil */
   }
 
   .main-content p {
-    font-size: 14px;
+    font-size: 14px; /* Ukuran font paragraf lebih kecil */
   }
 
   .about-text h1 {
-    font-size: 20px;
+    font-size: 20px; /* Ukuran font judul tentang lebih kecil */
   }
 
   .about-text p {
-    font-size: 12px;
+    font-size: 12px; /* Ukuran font paragraf tentang lebih kecil */
   }
 
-  .box {
-    flex: 1 1 calc(100% - 2rem);
+  .fas-content .box {
+    width: 100%; /* Lebar box penuh pada mobile */
   }
 
-  .box img {
-    max-width: 200px;
+  .fas-content img {
+    max-width: 100%; /* Memastikan gambar mengisi lebar box */
   }
 }
