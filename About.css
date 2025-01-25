@@ -248,10 +248,9 @@ header {
 }
 
 /* Responsive Design */
-/* Tablet */
 @media (max-width: 1024px) {
   .about {
-    grid-template-columns: 1fr; /* Satu kolom untuk tampilan tablet */
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
@@ -266,18 +265,18 @@ header {
   }
 
   .fas-content {
-    display: flex; /* Menggunakan flexbox untuk fasilitas */
-    flex-wrap: wrap; /* Membungkus item ke baris berikutnya */
-    justify-content: center; /* Menyelaraskan item di tengah */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
   }
 
   .fas-content {
-    width: 100%; /* Memastikan konten fasilitas mengisi lebar penuh */
+    width: 100%; 
   }
 
   .fas-content .box {
-    width: 45%; /* Lebar box untuk tablet */
-    margin: 10px; /* Jarak antar box */
+    width: 45%; 
+    margin: 10px; 
   }
 }
 
@@ -288,7 +287,7 @@ header {
   }
 
   #menu-icon {
-    display: block; /* Menampilkan menu icon pada mobile */
+    display: block; 
   }
 
   .navlist {
@@ -310,50 +309,50 @@ header {
   }
 
   .navlist.active {
-    right: 0; /* Menampilkan menu saat aktif */
+    right: 0;
   }
 
   .hero {
-    height: 50vh; /* Mengurangi tinggi hero section pada mobile */
+    height: 50vh;
   }
 
   .fas-content {
-    flex-direction: column; /* Mengatur fasilitas menjadi kolom */
-    align-items: center; /* Menyelaraskan item di tengah */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .fas-content .box {
-    width: 90%; /* Lebar box untuk mobile */
-    margin: 10px 0; /* Jarak antar box */
+    width: 90%;
+    margin: 10px 0; 
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 28px; /* Ukuran logo lebih kecil */
+    font-size: 28px; 
   }
 
   .main-content h1 {
-    font-size: 28px; /* Ukuran font judul lebih kecil */
+    font-size: 28px; 
   }
 
   .main-content p {
-    font-size: 14px; /* Ukuran font paragraf lebih kecil */
+    font-size: 14px;
   }
 
   .about-text h1 {
-    font-size: 20px; /* Ukuran font judul tentang lebih kecil */
+    font-size: 20px; 
   }
 
   .about-text p {
-    font-size: 12px; /* Ukuran font paragraf tentang lebih kecil */
+    font-size: 12px; 
   }
 
   .fas-content .box {
-    width: 100%; /* Lebar box penuh pada mobile */
+    width: 100%; /
   }
 
   .fas-content img {
-    max-width: 100%; /* Memastikan gambar mengisi lebar box */
+    max-width: 100%; 
   }
 }
