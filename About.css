@@ -214,7 +214,7 @@ header {
 
 /* Footer */
 .footer {
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   background-color: transparent; 
@@ -308,7 +308,7 @@ header {
     top: 100%;
     right: -100%;
     width: 50%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background: var(--main-color);
@@ -317,7 +317,7 @@ header {
 
   .navlist a {
     display: block;
-    padding: 15px;
+    padding: 20px;
     font-size: 20px;
   }
 

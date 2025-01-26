@@ -86,70 +86,70 @@ header {
 }
 
 /* Booking Form Styles */
-.booking-form {
-  background-color: #fff;
+.menu-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 600px;
-  margin: 80px auto;
 }
 
-.booking-form h2 {
-  margin-bottom: 15px;
-  color: #43766c;
+.menu-container h2 {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
+  color: #43766c;
+  margin-bottom: 20px;
 }
 
-.booking-form label {
+.menu-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.menu-container table th, .menu-container table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-container table th {
+  background-color: #43766c;
+  color: #fff;
+}
+
+.menu-container .booking-form {
+  background: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.menu-container .booking-form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #333;
 }
 
-.booking-form input,
-.booking-form select {
+.menu-container .booking-form input,
+.menu-container .booking-form select {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 14px;
 }
 
-.booking-form input:focus,
-.booking-form select:focus {
-  border-color: #43766c;
-  outline: none;
-}
-
-.booking-form input[type='submit'] {
+.menu-container .booking-form input[type="submit"] {
   background-color: #43766c;
   color: #fff;
-  justify-content: center;
   border: none;
-  padding: 10px;
-  height: 40px;
-  width: 90px;
-  border-radius: 4px;
   cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+  padding: 10px;
 }
 
-.booking-form input[type='submit']:hover {
+.menu-container .booking-form input[type="submit"]:hover {
   background-color: #365e54;
-}
-
-#booking-history {
-  margin-top: 30px;
-}
-
-.input {
-  display: flex;
 }
 
 /* Footer */
@@ -184,4 +184,113 @@ header {
 .social {
   display: flex;
   gap: 10px;
+}
+
+/* Media Query untuk Tablet */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 5%;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .navlist {
+    display: none; /* Sembunyikan menu di perangkat kecil */
+    flex-direction: column;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navlist a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #menu-icon {
+    display: block; /* Tampilkan ikon menu */
+  }
+
+  .menu-container {
+    padding: 10px;
+  }
+
+  .menu-container h2 {
+    font-size: 20px;
+  }
+
+  .menu-container table th, 
+  .menu-container table td {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .menu-container .booking-form input,
+  .menu-container .booking-form select {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .menu-container .booking-form input[type="submit"] {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
+
+/* Media Query untuk Mobile */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 3%;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .menu-container {
+    padding: 8px;
+  }
+
+  .menu-container h2 {
+    font-size: 16px;
+  }
+
+  .menu-container table th, 
+  .menu-container table td {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .menu-container .booking-form label {
+    font-size: 11px;
+  }
+
+  .menu-container .booking-form input,
+  .menu-container .booking-form select {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .menu-container .booking-form input[type="submit"] {
+    font-size: 11px;
+    padding: 7px;
+  }
+
+  .footer {
+    font-size: 10px;
+    padding: 5px;
+  }
 }
