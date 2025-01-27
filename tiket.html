@@ -12,47 +12,55 @@
 </head>
 <body>
      <!-- header --> 
-   <header>
-    <a href="#" class="logo">Lawata Beach</a>
-    <ul class="navlist" id="navlist" type="none">
-      <li><a href="beranda.html">Home</a></li>
-      <li><a href="About.html">About</a></li>
-      <li><a href="tiket.html">Pemesanan Tiket</a></li>
-      <div class="top-btnn">
-        <a href="#contact" class="h-btn">Contact me</a>
-      </div>
-    </ul>
-    <div class="bx bx-menu" id="menu-icon"></div>
-   </header>
+     <header>
+        <a href="#" class="logo">Lawata Beach</a>
+        <ul class="navlist" id="navlist" type="none">
+          <li><a href="beranda.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="tiket.html">Pemesanan Tiket</a></li>
+          <li><a href="tiket.html">Cari pesanan</a></li>
+          <div class="top-btnn">
+            <a href="kritiksaran.html" class="h-btn">Kritik & Saran</a>
+          </div>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+       </header>
     <!-- Header --> 
    <div class="menu-container">
     <h2>Daftar Harga Tiket Masuk</h2>
     <table>
         <thead>
             <tr>
-                <th>Jenis Kendaraan</th>
+                <th>Kategori</th>
                 <th>Tarif</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Mobil</td>
-                <td>Rp10.000</td>
+                <td>Dewasa</td>
+                <td>Rp6.000</td>
             </tr>
             <tr>
-                <td>Motor</td>
-                <td>Rp5.000</td>
+                <td>Anak-Anak</td>
+                <td>Rp4.000</td>
+            </tr>
+            <tr>
+                <td>Disabilitas</td>
+                <td>Rp2.000</td>
             </tr>
         </tbody>
     </table>
+    
     <h2>Pemesanan Tiket</h2>
-    <form class="booking-form" action="#" methode="POST">
-        <label for="vehicle">Pilih jenis kendaraan</label>
-        <select id="vehicle" name="vehicle" required>
-            <option value="mobil">Mobil</option>
-            <option value="motor">Motor</option>
+    <form class="booking-form" action="#" method="POST">
+        <label for="category">Pilih Kategori</label>
+        <select id="category" name="category" required>
+            <option value="" disabled selected>Pilih Kategori</option> <!-- Placeholder -->
+            <option value="dewasa">Dewasa</option>
+            <option value="anak-anak">Anak-Anak</option>
+            <option value="disabilitas">Disabilitas</option>
         </select>
-
+    
         <label for="quantity">Jumlah Tiket:</label>
         <input type="number" id="quantity" name="quantity" min="1" required>
 
@@ -62,7 +70,7 @@
         <label for="nomor">Nomor Pemesan:</label>
         <input type="nomor" id="nomor" name="nomor" required>
 
-        <input type="submit" value="Pesan Tiket">
+        <button type="submit">Pesan Tiket</button>
     </form>
    </div>
     <!-- footer -->
