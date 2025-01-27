@@ -1,90 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Profil Lawata Beach</title>
-    <link rel="stylesheet" href="Tiket.css">
+    <link rel="stylesheet" href="Tiket.css" />
     <!-- Box Icons Link -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
     <!-- Remix Icons Link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
-</head>
-<body>
-     <!-- header --> 
-     <header>
-        <a href="#" class="logo">Lawata Beach</a>
-        <ul class="navlist" id="navlist" type="none">
-          <li><a href="beranda.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="tiket.html">Pemesanan Tiket</a></li>
-          <li><a href="tiket.html">Cari pesanan</a></li>
-          <div class="top-btnn">
-            <a href="kritiksaran.html" class="h-btn">Kritik & Saran</a>
-          </div>
-        </ul>
-        <div class="bx bx-menu" id="menu-icon"></div>
-       </header>
-    <!-- Header --> 
-   <div class="menu-container">
-    <h2>Daftar Harga Tiket Masuk</h2>
-    <table>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <a href="#" class="logo">Lawata Beach</a>
+      <ul class="navlist" id="navlist" type="none">
+        <li><a href="beranda.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="tiket.html">Pemesanan Tiket</a></li>
+        <li><a href="tiket.html">Cari pesanan</a></li>
+        <div class="top-btnn">
+          <a href="kritiksaran.html" class="h-btn">Kritik & Saran</a>
+        </div>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!-- Header -->
+    <div class="menu-container">
+      <h2>Daftar Harga Tiket Masuk</h2>
+      <table>
         <thead>
-            <tr>
-                <th>Kategori</th>
-                <th>Tarif</th>
-            </tr>
+          <tr>
+            <th>Kategori</th>
+            <th>Tarif</th>
+          </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Dewasa</td>
-                <td>Rp6.000</td>
-            </tr>
-            <tr>
-                <td>Anak-Anak</td>
-                <td>Rp4.000</td>
-            </tr>
-            <tr>
-                <td>Disabilitas</td>
-                <td>Rp2.000</td>
-            </tr>
+          <tr>
+            <td>Dewasa</td>
+            <td>Rp6.000</td>
+          </tr>
+          <tr>
+            <td>Anak-Anak</td>
+            <td>Rp4.000</td>
+          </tr>
+          <tr>
+            <td>Disabilitas</td>
+            <td>Rp2.000</td>
+          </tr>
         </tbody>
-    </table>
-    
-    <h2>Pemesanan Tiket</h2>
-    <form class="booking-form" action="#" method="POST">
+      </table>
+
+      <h2>Pemesanan Tiket</h2>
+      <form class="booking-form" action="#" method="POST">
         <label for="category">Pilih Kategori</label>
         <select id="category" name="category" required>
-            <option value="" disabled selected>Pilih Kategori</option> <!-- Placeholder -->
-            <option value="dewasa">Dewasa</option>
-            <option value="anak-anak">Anak-Anak</option>
-            <option value="disabilitas">Disabilitas</option>
+          <option value="" disabled selected>Pilih Kategori</option>
+          <!-- Placeholder -->
+          <option value="dewasa">Dewasa</option>
+          <option value="anak-anak">Anak-Anak</option>
+          <option value="disabilitas">Disabilitas</option>
         </select>
-    
+
         <label for="quantity">Jumlah Tiket:</label>
-        <input type="number" id="quantity" name="quantity" min="1" required>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          required
+        />
 
         <label for="name">Nama Pemesan:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required />
 
         <label for="nomor">Nomor Pemesan:</label>
-        <input type="nomor" id="nomor" name="nomor" required>
+        <input type="nomor" id="nomor" name="nomor" required />
 
         <button type="submit">Pesan Tiket</button>
-    </form>
-   </div>
+      </form>
+    </div>
     <!-- footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 Lawata Beach. All rights reserved. | <a href="#">Privacy Policy</a></p>
-            <div class="social">
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-                <a href="#"><i class="ri-youtube-fill"></i></a>
-            </div>
+      <div class="footer-content">
+        <p>
+          &copy; 2025 Lawata Beach. All rights reserved. |
+          <a href="#">Privacy Policy</a>
+        </p>
+        <div class="social">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
         </div>
+      </div>
     </footer>
     <script src="js/beranda.js"></script>
-</body>
+  </body>
 </html>
