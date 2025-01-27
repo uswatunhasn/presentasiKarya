@@ -60,7 +60,7 @@ header {
 
 #menu-icon {
   font-size: 35px;
-  display: none;
+  display: block;
   cursor: pointer;
   color: var(--other-color);
 }
@@ -86,18 +86,19 @@ header {
 }
 
 /* Booking Form Styles */
-.menu-container {
-  max-width: 800px;
-  margin: 50px auto;
+.menu-container { 
+  width: 90%; 
+  max-width: 600px; 
+  margin: 100px auto 50px auto;
   background: #fff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu-container h2 {
   text-align: center;
-  color: #43766c;
+  color: var(--second-bg-color);
   margin-bottom: 20px;
 }
 
@@ -114,7 +115,7 @@ header {
 }
 
 .menu-container table th {
-  background-color: #43766c;
+  background-color: var(--Asecond-bg-color);
   color: #fff;
 }
 
@@ -141,7 +142,7 @@ header {
 }
 
 .menu-container .booking-form input[type="submit"] {
-  background-color: #43766c;
+  background-color: var(--second-bg-color);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -149,7 +150,7 @@ header {
 }
 
 .menu-container .booking-form input[type="submit"]:hover {
-  background-color: #365e54;
+  background-color: var(--second-bg-color);
 }
 
 /* Footer */
@@ -188,33 +189,38 @@ header {
 
 /* Media Query untuk Tablet */
 @media (max-width: 768px) {
-  header {
-    padding: 10px 5%;
-    flex-wrap: wrap;
-  }
-
   .logo {
     font-size: 26px;
   }
 
-  .navlist {
-    display: none; /* Sembunyikan menu di perangkat kecil */
-    flex-direction: column;
-    background-color: var(--main-color);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    padding: 10px;
-  }
-
-  .navlist a {
-    margin: 10px 0;
-    text-align: center;
+  header {
+    padding: 15px 5%;
   }
 
   #menu-icon {
-    display: block; /* Tampilkan ikon menu */
+    display: block; 
+  }
+
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-color);
+    transition: all 0.5s ease;
+  }
+
+  .navlist a {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .navlist.active {
+    right: 0;
   }
 
   .menu-container {
