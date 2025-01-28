@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+  }
+  
+  :root {
+    --text-color: #ffff;
+    --bg-color: #F8FAE5;
+    --second-bg-color: #43766C;
+    --main-color: #76453B;
+    --other-color: #B19470;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--text-color);
+  }
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #5f9c5f;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding: 20px; 
+}
+
+.logo {
+    font-size: 30px;
+    color: #AFF6BE;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* menu login */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Login Container */
+.login-container {
+    background: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #76453B;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #43766C;
+}
+
+.login-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #43766C;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background: #43766C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #36594f;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* privacy */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent; 
+    color: grey; 
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    color: grey; 
+}
+
+.social img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.2); 
+}

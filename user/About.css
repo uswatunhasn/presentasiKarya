@@ -294,6 +294,40 @@ header {
 }
 
 /* Mobile */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-img,
+  .about-text {
+    padding: 0;
+  }
+
+  .main-content {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .fas-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
+
+  .fas-content {
+    width: 100%; 
+  }
+
+  .fas-content .box {
+    width: 45%; 
+    margin: 10px; 
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   header {
     padding: 15px 5%;

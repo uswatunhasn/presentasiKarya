@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawata Beach</title>
+    <link rel="stylesheet" href="manajemen.css">
+        <!-- box icons link -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+        <!-- remix icons link -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Admin</a>
+        <ul class="navlist">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="manajemen.html" class="active">Panel</a></li>
+            <li><a href="loginadmin.html">Logout</a></li>
+        </ul>
+    </header>
+  <main>
+    <section class="content-management">
+        <h2>Manajemen Konten</h2>
+        <a href="tambahkonten.html" class="btn tambah-btn">+ Tambah Konten Baru</a>
+
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Judul</th>
+                    <th>Tanggal</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>About </td>
+                    <td>2025-01-28</td>
+                    <td>Dipublikasikan</td>
+                    <td>
+                        <a href="edit-konten.html" class="btn edit-btn">Edit</a>
+                        <a href="#" class="btn delete-btn" onclick="confirmHapus()">Hapus</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+   <!-- privacy -->
+   <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Lawata Beach. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <div class="social">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+</footer>
+<script src="js/beranda.js"></script>
+</body>
+</html>

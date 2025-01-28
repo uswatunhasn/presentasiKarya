@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --text-color: #ffff;
+  --bg-color: #F8FAE5;
+  --second-bg-color: #43766C;
+  --main-color: #76453B;
+  --other-color: #B19470;
+}
+
+body {
+  background: url('images/lawata.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: var(--main-color);
+  color: var(--other-color);
+}
+
+header .logo {
+  font-size: 42px;
+  font-weight: bold;
+  color: #B19470;
+  font-weight: 600;
+}
+
+header .navlist {
+  display: flex;
+  list-style: none;
+}
+
+header .navlist li {
+  margin-left: 20px;
+}
+
+header .navlist a {
+  color: var(--other-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+/* Main Content */
+main {
+  padding: 50px 10%;
+  background-color: #f9f9f9;
+  min-height: calc(100vh - 130px);
+}
+
+.content-management {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--second-bg-color);
+}
+
+.content-management h2 {
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.tambah-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.tambah-btn:hover {
+  background-color: #555;
+}
+
+/* Table */
+.content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.content-table th, .content-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.content-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.content-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.content-table .btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content-table .edit-btn {
+  background-color: #4caf50;
+}
+
+.content-table .edit-btn:hover {
+  background-color: #45a049;
+}
+
+.content-table .delete-btn {
+  background-color: #f44336;
+}
+
+.content-table .delete-btn:hover {
+  background-color: #e53935;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+}

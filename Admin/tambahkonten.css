@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --text-color: #ffff;
+  --bg-color: #F8FAE5;
+  --second-bg-color: #43766C;
+  --main-color: #76453B;
+  --other-color: #B19470;
+}
+
+body {
+  background: var(--text-color);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: var(--main-color);
+  color: var(--other-color);
+}
+
+header .logo {
+  font-size: 42px;
+  font-weight: bold;
+  color: #B19470;
+  font-weight: 600;
+}
+
+header .navlist {
+  display: flex;
+  list-style: none;
+}
+
+header .navlist li {
+  margin-left: 20px;
+}
+
+header .navlist a {
+  color: var(--other-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Main Content */
+main {
+  padding: 50px 10%;
+  background-color: var(--second-bg-color);
+  min-height: calc(100vh - 130px);
+}
+.postingan-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.postingan-container h2 {
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+
+.postingan-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.postingan-form input, .postingan-form textarea, .postingan-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.postingan-form textarea {
+  resize: vertical;
+}
+
+.postingan-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.postingan-form button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}

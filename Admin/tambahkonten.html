@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Admin Lawata Beach</title>
+    <link rel="stylesheet" href="tambahkonten.css">
+        <!-- box icons link -->
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+        <!-- remix icons link -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Admin</a>
+        <ul class="navlist">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="postingan.html" class="active">Postingan</a></li>
+            <li><a href="manajemen.html">Edit Content</a></li>
+            <li><a href="loginadmin.html">Logout</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="postingan-container">
+            <h2>Buat Postingan Baru</h2>
+            <form class="postingan-form">
+                <label for="title">Judul Postingan:</label>
+                <input type="text" id="title" name="title" placeholder="Masukkan judul postingan" required>
+
+                <label for="content">Isi Postingan:</label>
+                <textarea id="content" name="content" rows="8" placeholder="Tulis isi konten di sini" required></textarea>
+
+                <label for="category">Kategori:</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Pilih kategori</option>
+                    <option value="news">About</option>
+                    <option value="event">pesanan</option>
+                    <option value="announcement">Tiket</option>
+                </select>
+
+                <label for="image">Unggah Gambar:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <button type="submit">Tambahkan</button>
+            </form>
+        </section>
+    </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>
+        &copy; 2025 Lawata Beach. All rights reserved. |
+        <a href="#">Privacy Policy</a>
+      </p>
+      <div class="social">
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-youtube-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/beranda.js"></script>
+</body>
+</html>

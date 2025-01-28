@@ -60,7 +60,7 @@ header {
 
 #menu-icon {
   font-size: 35px;
-  display: block;
+  display: none;
   cursor: pointer;
   color: var(--other-color);
 }
@@ -115,8 +115,7 @@ header {
 }
 
 .menu-container table th {
-  background-color: var(--Asecond-bg-color);
-  color: #fff;
+  background-color: var(--second-bg-color);
 }
 
 .menu-container .booking-form {
@@ -141,16 +140,21 @@ header {
   border-radius: 4px;
 }
 
-.menu-container .booking-form input[type="submit"] {
+/* Button */
+button {
   background-color: var(--second-bg-color);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
+  color: #fff; 
+  border: none; 
+  padding: 12px 20px; 
+  font-size: 16px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.5s ease, transform 0.3s ease; 
 }
 
-.menu-container .booking-form input[type="submit"]:hover {
-  background-color: var(--second-bg-color);
+button:hover {
+  background-color: #36594f; 
+  transform: scale(1.05); 
 }
 
 /* Footer */
@@ -243,11 +247,10 @@ header {
     padding: 6px;
   }
 
-  .menu-container .booking-form input[type="submit"] {
-    font-size: 13px;
-    padding: 8px;
-  }
-
+  button {
+    font-size: 14px; /* Ukuran font lebih kecil untuk tablet */
+    padding: 10px 15px; /* Padding lebih kecil untuk tablet */
+}
   .footer {
     font-size: 12px;
   }
@@ -290,10 +293,10 @@ header {
     padding: 5px;
   }
 
-  .menu-container .booking-form input[type="submit"] {
-    font-size: 11px;
-    padding: 7px;
-  }
+  button {
+    font-size: 12px; /* Ukuran font lebih kecil untuk mobile */
+    padding: 8px 12px; /* Padding lebih kecil untuk mobile */
+}
 
   .footer {
     font-size: 10px;
