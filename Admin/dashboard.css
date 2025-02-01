@@ -15,26 +15,26 @@
 }
 
 body {
-  background: var(--text-color);
+  background: var(--bg-color);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+
 /* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10%;
+  padding: 15px 5%;
   background-color: var(--main-color);
   color: var(--other-color);
 }
 
 header .logo {
   font-size: 42px;
-  font-weight: bold;
-  color: #B19470;
-  font-weight: 600;
+  font-weight: 800;
+  color: var(--other-color);
 }
 
 header .navlist {
@@ -43,30 +43,32 @@ header .navlist {
 }
 
 header .navlist li {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 header .navlist a {
   color: var(--other-color);
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border-radius: 5px;
 }
-.navlist a:hover{
+
+.navlist a:hover {
   background: var(--other-color);
   color: var(--bg-color);
-  box-shadow: 0 0 20px var(--bg-color);
-  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--bg-color);
+  transform: scale(1.05);
 }
+
 /* Main Content */
 main {
-  padding: 50px 10%;
-  background-color: #f9f9f9;
+  padding: 40px 5%;
+  background-color: var(--bg-color);
   min-height: calc(100vh - 130px);
 }
 
 .dashboard-container {
-  background: #fff;
+  background: var(--other-color);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -85,13 +87,13 @@ main {
 /* Dashboard Grid */
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
 .dashboard-card {
   background: #f9f9f9;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -105,19 +107,18 @@ main {
 .dashboard-card p {
   margin-bottom: 15px;
   color: #555;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
 }
 
 .dashboard-card .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #333;
   color: #fff;
   border: none;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -159,55 +160,24 @@ main {
   gap: 10px;
   color: grey;
 }
-/* Icon Burger */
-#menu-icon {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  color: var(--other-color);
-}
 
-/* Navigasi untuk Mobile */
+
+/* media query*/
 @media (max-width: 768px) {
-.navlist {
-  position: absolute;
-  top: 100%;
-  right: -100%; /* Sembunyikan navigasi awalnya */
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: var(--main-color);
-  transition: all 0.5s ease;
-  z-index: 999; /* Supaya di atas elemen lain */
-}
-
-.navlist.active {
-  right: 0; /* Tampilkan navigasi saat aktif */
-}
-
-.navlist a {
-  display: block;
-  padding: 20px;
-  font-size: 20px;
-  color: var(--text-color);
-  text-align: center;
-  border-bottom: 1px solid var(--other-color);
-}
-
-.navlist a:hover {
-  background: var(--other-color);
-  color: var(--bg-color);
-}
-}
-
-/* Media Query untuk Mobile */
-@media (max-width: 480px) {
-  #menu-icon {
-    display: block; /* Tampilkan icon burger */
+  header .logo {
+    font-size: 32px;
   }
 
-  .navlist {
-    width: 70%;
+  .dashboard-card h3 {
+    font-size: 18px;
+  }
+
+  .dashboard-card p {
+    font-size: 14px;
+  }
+
+  .dashboard-card .btn {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }
